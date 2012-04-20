@@ -61,3 +61,13 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
+
+[doctrine-data-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
+    target=/doctrine-data-fixtures
+
+[DoctrineFixturesBundle]
+    git=git://github.com/doctrine/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+    version=origin/2.0
+

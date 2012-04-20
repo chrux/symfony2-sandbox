@@ -6,6 +6,14 @@
 *.swp
 *.out
 
+# Apache logs
+apache_logs
+apache_logs/
+www_logs/
+
+# PHPStorm files
+.idea/
+
 # Symfony2 files
 # Bootstrap
 app/bootstrap*
