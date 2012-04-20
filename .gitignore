@@ -1,3 +1,12 @@
+# generic files to ignore
+*~
+*.lock
+!deps.lock
+*.DS_Store
+*.swp
+*.out
+
+# Symfony2 files
 # Bootstrap
 app/bootstrap*
 
