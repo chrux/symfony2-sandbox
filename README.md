@@ -13,23 +13,23 @@ Este paquete viene pre-configurado con los siguientes bundles:
 
 *Symfony Standard Edition*
 
-``FrameworkBundle``
-``SensioFrameworkExtraBundle``
-``DoctrineBundle``
-``TwigBundle``
-``SwiftmailerBundle``
-``MonologBundle``
-``AsseticBundle``
-``JMSSecurityExtraBundle``
-``WebProfilerBundle (en dev/test env)``
-``SensioDistributionBundle (en dev/test env)``
-``SensioGeneratorBundle (en dev/test env)``
-``AcmeDemoBundle (en dev/test env)``
+``FrameworkBundle``  
+``SensioFrameworkExtraBundle``  
+``DoctrineBundle``  
+``TwigBundle``  
+``SwiftmailerBundle``  
+``MonologBundle``  
+``AsseticBundle``  
+``JMSSecurityExtraBundle``  
+``WebProfilerBundle (en dev/test env)``  
+``SensioDistributionBundle (en dev/test env)``  
+``SensioGeneratorBundle (en dev/test env)``  
+``AcmeDemoBundle (en dev/test env)``  
 
 *Extras*
 
-``DoctrineFixturesBundle (en dev/test env)``
-``DoctrineMigrationsBundle (en dev/test env)``
+``DoctrineFixturesBundle (en dev/test env)``  
+``DoctrineMigrationsBundle (en dev/test env)``  
 
 2) Instalación
 --------------
