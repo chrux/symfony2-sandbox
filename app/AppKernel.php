@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle();
+            $bundles[] = new Symfony\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle();
         }
 
         return $bundles;
