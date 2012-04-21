@@ -5,6 +5,8 @@ imports:
 framework:
     #esi:             ~
     #translator:      { fallback: %locale% }
+    # Necesitamos poner esto en nulo (~) para que SonataAdmin ponga las traducciones a las etiquetas
+    translator:      ~
     secret:          %secret%
     charset:         UTF-8
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
