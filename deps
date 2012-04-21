@@ -62,6 +62,7 @@
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
 
+
 [doctrine-data-fixtures]
     git=http://github.com/doctrine/data-fixtures.git
     target=/doctrine-data-fixtures
@@ -79,3 +80,35 @@
     git=http://github.com/doctrine/DoctrineMigrationsBundle.git
     target=/bundles/Symfony/Bundle/DoctrineMigrationsBundle
     version=origin/2.0
+
+
+[SonataAdminBundle]
+    git=http://github.com/sonata-project/SonataAdminBundle.git
+    target=/bundles/Sonata/AdminBundle
+    version=origin/2.0
+
+[SonataBlockBundle]
+    git=http://github.com/sonata-project/SonataBlockBundle.git
+    target=/bundles/Sonata/BlockBundle
+    version=origin/2.0
+
+[SonataCacheBundle]
+    git=http://github.com/sonata-project/SonataCacheBundle.git
+    target=/bundles/Sonata/CacheBundle
+    version=origin/2.0
+
+[SonatajQueryBundle]
+    git=http://github.com/sonata-project/SonatajQueryBundle.git
+    target=/bundles/Sonata/jQueryBundle
+
+[KnpMenuBundle]
+    git=http://github.com/KnpLabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+
+[KnpMenu]
+    git=http://github.com/KnpLabs/KnpMenu.git
+    target=/knp/menu
+
+[Exporter]
+    git=http://github.com/sonata-project/exporter.git
+    target=/exporter
