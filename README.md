@@ -56,7 +56,23 @@ Nota que tu *debes* tener git instalado y ser capaz de ejecutar el comando git
 para poder ejecutar este script, de lo contrario no podras instalarlo ni bajar
 las librerias
 
-### c) Aceso a la aplicación ai través del Navegador Web
+### c) Establece los permisos
+
+1. Utilizando ACL en sistemas que soportan chmod +a
+
+    rm -rf app/cache/*
+    rm -rf app/logs/*
+    sudo chmod +a "www-data allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+    sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+
+2. Utilizando ACL en sistemas que no soportan chmod +a
+
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+
+``Nota: www-data es el usuario que utiliza apache. Para saber más busca la guía de [instalación](http://symfony.com/doc/current/book/installation.html) en sitio web de Symfony``
+
+### d) Aceso a la aplicación ai través del Navegador Web
 
 Debes colocar la instalación en una carpeta accesible por el servidor web,
 es decir colocarla dentro de la raíz del directorio web, luego de esto tu debes
