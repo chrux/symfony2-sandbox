@@ -2,18 +2,22 @@
 ; by enclosing the key with % (like %database_user%)
 ; Comments start with ';', as in php.ini
 [parameters]
-    database_driver   = pdo_mysql
-    database_host     = localhost
-    database_port     =
-    database_name     = symfony
-    database_user     = root
-    database_password =
+    database_driver         = pdo_pgsql
+    database_host           = localhost
+    database_port           =
+    database_name           = symfony
+    database_user           = root
+    database_password       =
 
-    mailer_transport  = smtp
-    mailer_host       = localhost
-    mailer_user       =
-    mailer_password   =
+    mailer_transport        = smtp
+    mailer_host             = localhost
+    mailer_user             =
+    mailer_password         =
 
-    locale            = en
+    locale                  = en
 
-    secret            = ThisTokenIsNotSoSecretChangeIt
+    secret                  = ThisTokenIsNotSoSecretChangeIt
+
+;   Sonata Admin Options
+    sonata_admin.title      = Sonata Admin
+    sonata_admin.logo_title = /bundles/sonataadmin/logo_title.png
