@@ -1,7 +1,7 @@
 liip_imagine:         
     driver:               gd 
     web_root:             %kernel.root_dir%/../web 
-    data_root:            %liip_imagine.web_root% 
+    data_root:            %kernel.root_dir%/../web 
     cache_prefix:         /media/cache 
     cache:                web_path 
     data_loader:          filesystem 
