@@ -18,3 +18,7 @@ sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
     prefix: /admin
 
+# To redirect /admin to /admin/dashboard
+admin_dashboard:
+    pattern: /admin
+    defaults: { _controller: FrameworkBundle:Redirect:redirect, route:sonata_admin_dashboard, permanent: true }
