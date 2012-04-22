@@ -1,0 +1,16 @@
+#
+# more information can be found here http://sonata-project.org/bundles/admin
+#
+# @author Christian Torres <chtorrez@gmail.com>
+# @version 1.0
+# @created 2012-04-21 16:40
+#
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
