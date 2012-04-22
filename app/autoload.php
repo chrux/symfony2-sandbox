@@ -27,7 +27,9 @@ $loader->registerNamespaces(array(
     'Knp\Bundle'       => __DIR__.'/../vendor/bundles',
     'Knp\Menu'         => __DIR__.'/../vendor/knp/menu/src',
 
-
+    // Agregando lib para manipulación de imagenes
+    'Imagine'   => __DIR__.'/../vendor/imagine/lib',
+    'Liip'      => __DIR__.'/../vendor/bundles',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',

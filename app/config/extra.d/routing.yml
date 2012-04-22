@@ -26,3 +26,8 @@ sonata_user_impersonating:
 admin_dashboard:
     pattern: /admin
     defaults: { _controller: FrameworkBundle:Redirect:redirect, route:sonata_admin_dashboard, permanent: true }
+
+# To manipulate images
+_imagine:
+    resource: .
+    type:     imagine

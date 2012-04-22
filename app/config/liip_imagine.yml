@@ -1,0 +1,21 @@
+liip_imagine:         
+    driver:               gd 
+    web_root:             %kernel.root_dir%/../web 
+    data_root:            %liip_imagine.web_root% 
+    cache_prefix:         /media/cache 
+    cache:                web_path 
+    data_loader:          filesystem 
+    controller_action:    liip_imagine.controller:filterAction 
+    formats:              [] 
+    filter_sets:          
+        # Prototype
+        sonata_image_preview:                 
+            path:                 ~ 
+            quality:              75 
+            format:               ~ 
+            cache:                ~ 
+            data_loader:          ~ 
+            controller_action:    ~ 
+            filters:              
+                thumbnail:  { size: [120,90], mode: outbound }
+                #crop:  { start: [10,20], size: [120,90] }

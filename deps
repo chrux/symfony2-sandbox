@@ -131,3 +131,12 @@
 [SonataEasyExtendsBundle]
     git=git://github.com/sonata-project/SonataEasyExtendsBundle.git
     target=/bundles/Sonata/EasyExtendsBundle
+
+
+[Imagine]
+    git=http://github.com/avalanche123/Imagine.git
+    target=/imagine
+
+[LiipImagineBundle]
+    git=http://github.com/liip/LiipImagineBundle.git
+    target=/bundles/Liip/ImagineBundle
