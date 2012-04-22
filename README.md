@@ -60,15 +60,14 @@ las librerias
 
 1. Utilizando ACL en sistemas que soportan chmod +a
 
-    rm -rf app/cache/*
-    rm -rf app/logs/*
-    sudo chmod +a "www-data allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
-    sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+    rm -rf app/cache/* app/logs/*
+    sudo chmod +a "www-data allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs web/media/cache
+    sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs web/media/cache
 
 2. Utilizando ACL en sistemas que no soportan chmod +a
 
-    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
-    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs web/media/cache
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs web/media/cache
 
 ``Nota: www-data es el usuario que utiliza apache. Para saber más busca la guía de [instalación](http://symfony.com/doc/current/book/installation.html) en sitio web de Symfony``
 
