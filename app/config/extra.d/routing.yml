@@ -18,6 +18,10 @@ sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
     prefix: /admin
 
+sonata_user_impersonating:
+    pattern: /admin/dashboard
+    defaults: { _controller: SonataAdminBundle:Core:dashboard }
+
 # To redirect /admin to /admin/dashboard
 admin_dashboard:
     pattern: /admin
