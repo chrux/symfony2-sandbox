@@ -6,8 +6,8 @@ fos_user:
     firewall_name:  main
     user_class:     Application\Sonata\UserBundle\Entity\User
 
-    #group:
-    #    group_class: Application\Sonata\UserBundle\Entity\Group
+    group:
+        group_class: Application\Sonata\UserBundle\Entity\Group
 
 # Enable Doctrine to map the provided entities
 doctrine:
@@ -16,5 +16,5 @@ doctrine:
             default:
                 mappings:
                     FOSUserBundle: ~
-                    #ApplicationSonataUserBundle: ~
-                    #SonataUserBundle: ~
+                    ApplicationSonataUserBundle: ~
+                    SonataUserBundle: ~

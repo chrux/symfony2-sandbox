@@ -8,6 +8,7 @@ imports:
     # Añadiendo Sonata Admin
     - { resource: extra.d/sonata_admin.yml }
     - { resource: extra.d/sonata_block.yml }
+    - { resource: extra.d/sonata_user.yml }
 
 framework:
     #esi:             ~
