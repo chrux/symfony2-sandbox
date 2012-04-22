@@ -4,4 +4,4 @@
 #   prefix:   /_internal
 
 sonata_routes:
-    resource: "sonata/routing.yml"
+    resource: "extra.d/routing.yml"

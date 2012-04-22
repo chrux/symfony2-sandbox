@@ -17,11 +17,17 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
 
+    // Auth
+    'FOS'              => __DIR__.'/../vendor/bundles',
+    'Application'      => __DIR__.'/../src', // Default Bundle To Manage just to Auth, DON'T modify ANYTHING!
+
     // Añadiendo SonataAdmin
     'Sonata'           => __DIR__.'/../vendor/bundles',
     'Exporter'         => __DIR__.'/../vendor/exporter/lib',
     'Knp\Bundle'       => __DIR__.'/../vendor/bundles',
     'Knp\Menu'         => __DIR__.'/../vendor/knp/menu/src',
+
+
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
