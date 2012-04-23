@@ -29,7 +29,17 @@ Este paquete viene pre-configurado con los siguientes bundles:
 *Extras*
 
 ``DoctrineFixturesBundle (en dev/test env)``  
-``DoctrineMigrationsBundle (en dev/test env)``  
+``DoctrineMigrationsBundle (en dev/test env)``
+``SonataAdminBundle``
+``SonataDoctrineORMAdminBundle``
+``SonataBlockBundle``
+``SonataCacheBundle``
+``SonatajQueryBundle``
+``KnpMenuBundle``
+``FOSUserBundle``
+``SonataUserBundle``
+``SonataEasyExtendsBundle (end dev/test env)``
+``LiipImagineBundle``
 
 2) Instalación
 --------------
