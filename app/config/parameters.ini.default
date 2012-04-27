@@ -20,5 +20,5 @@
 
 ;   Sonata Admin Options
     sonata_admin.title          = Sonata Admin
-    sonata_admin.logo_title     = /bundles/sonataadmin/logo_title.png
+    sonata_admin.logo_title     = bundles/sonataadmin/logo_title.png
     sonata.user.admin.groupname = Usuarios
