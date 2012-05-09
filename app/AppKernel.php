@@ -29,6 +29,7 @@ class AppKernel extends Kernel
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             // Agregando lib para manipulación de imagenes
@@ -42,7 +43,6 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle();
             $bundles[] = new Symfony\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle();
-            $bundles[] = new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle();
         }
 
         return $bundles;
